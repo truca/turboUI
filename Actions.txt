@@ -1,0 +1,16 @@
+global store (redux) object
+
+
+Actions
+log // registrar
+fetch // pedir. POST? id
+navigate // path
+show // modal. información? id
+
+handlers
+focus
+blur
+click
+hover
+change
+submit
