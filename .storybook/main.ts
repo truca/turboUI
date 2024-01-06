@@ -1,4 +1,5 @@
 import type { StorybookConfig } from "@storybook/nextjs";
+import * as path from "path";
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -14,6 +15,7 @@ const config: StorybookConfig = {
       builder: {
         useSWC: true, // Enables SWC support
       },
+      nextConfigPath: path.resolve(__dirname, "../next.config.js"),
     },
   },
   docs: {
